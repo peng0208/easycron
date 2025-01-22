@@ -2,8 +2,13 @@
 name = "easycron"
 version = "0.1.0"
 edition = "2024"
+description = "rust cron library"
+repository = "https://github.com/peng0208/easycron"
+license = "MIT"
+keywords = ["cron", "crontab", "job-schedule", "schedule", "tokio"]
 
 [dependencies]
+anyhow = "1.0.95"
 chrono = "0.4.39"
 cron = "0.15.0"
 derive_builder = "0.20.2"
