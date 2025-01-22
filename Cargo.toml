@@ -1,6 +1,6 @@
 [package]
 name = "easycron"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "rust cron library"
 repository = "https://github.com/peng0208/easycron"
