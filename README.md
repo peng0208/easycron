@@ -14,7 +14,6 @@ cargo add easycron
 
 ```rust
 #[tokio::main]
-// 定义一个异步的主函数
 async fn main() -> Result<()> {
     let mut crond = CronBuilder::default().debug(true).build().unwrap();
 

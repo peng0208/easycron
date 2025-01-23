@@ -5,7 +5,6 @@ use easycron::*;
 use tokio::time::sleep;
 
 #[tokio::main]
-// 定义一个异步的主函数
 async fn main() -> Result<()> {
     // 构建一个Cron调度器实例，开启调试模式
     let mut crond = CronBuilder::default().debug(true).build().unwrap();

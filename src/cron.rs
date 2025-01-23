@@ -1,6 +1,7 @@
 use crate::Job;
 use crate::job::JobId;
 use derive_builder::Builder;
+use log::info;
 use std::collections::HashMap;
 use std::sync::{Arc, Mutex};
 
@@ -58,7 +59,7 @@ impl Cron {
 
     async fn event(&mut self, e: Event) {
         if self.debug {
-            println!("Job changed: {:?}", e);
+            info!("Job changed: {:?}", e);
         }
 
         if !self.running {
